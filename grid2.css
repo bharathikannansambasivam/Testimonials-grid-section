@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    text-align: center;
+display: grid;  
+  font-family: sans-serif;
+font-size: 1rem;
+font-weight: bolder;
+height: 90vh;
+
+grid-template-areas:
+ 'header header header'
+'nav contents sidebar'
+'nav footer footer';
+grid-template-columns: 20% auto 20%;
+grid-template-rows: 10% auto 10%;
+word-wrap:break-word;
+}
+header,
+main,
+aside,nav,
+footer{
+    background: gray;
+    padding: 16px;
+    color: black;
+
+    border: 3px solid red;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+
+}main{
+    grid-area: contents;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+footer{
+    grid-area: footer;
+}
